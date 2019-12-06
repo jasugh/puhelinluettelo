@@ -1,0 +1,21 @@
+GET http://localhost:3001/info
+Accept: application/json
+
+###
+GET http://localhost:3001/api/persons/7
+Accept: application/json
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Aaro Hellaas",
+  "number": "0000002222"
+}
+
+###
+DELETE localhost:3001/api/persons/:2
+
+###
+
