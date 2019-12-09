@@ -8,7 +8,8 @@
     "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rmdir build /q /s && cd ../FullStackOpen2019/osa2/puhelinluettelo && npm run build --prod && xcopy build ..\\..\\..\\puhelinluettelo\\build /E /I",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "author": "Jukka",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "eslint": "^6.7.2",
     "nodemon": "^2.0.1"
   }
 }
