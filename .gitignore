@@ -1,2 +1,5 @@
 # Project exclude paths
 /node_modules/
+
+#keys
+/config/keys_dev.js
