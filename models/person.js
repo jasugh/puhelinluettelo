@@ -4,6 +4,8 @@ const uniqueValidator = require('mongoose-unique-validator');
 // DB Config
 const db = require('../config/keys').mongoURI;
 
+console.log('mongoURI ', db);
+
 mongoose
     .connect(db, {
         useNewUrlParser: true,
